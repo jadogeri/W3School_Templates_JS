@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import Gourmet_Catering from "./gourmet_catering/src/App"
-import './App.css';
+
 import Routes from "./Routes"
 
 function App() {
