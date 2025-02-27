@@ -1,8 +1,7 @@
 import { BrowserRouter, Route, Routes} from "react-router";
 import React from 'react'
 import GourmetCatering from "../src/gourmet_catering/src/App.js"
-// import TestStore from "../components/testcomponent/TestStore.jsx"
-
+import Home from "./Home.jsx"
 
 const ProjectRoutes = () => {
 
@@ -10,7 +9,7 @@ const ProjectRoutes = () => {
 	<BrowserRouter >
 
 		<Routes >				
-			{/* <Route path="/"  index />  */}
+			<Route path="/" element={<Home/>} index /> 
 			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 
 		
 			 
