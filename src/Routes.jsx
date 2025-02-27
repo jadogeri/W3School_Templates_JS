@@ -12,12 +12,10 @@ import PhotoPortfolio from "../src/photo_portfolio/src/App.js"
 
 
 import Home from "./Home.jsx"
-
 const ProjectRoutes = () => {
 
   return (
 	<BrowserRouter >
-
 		<Routes >				
 			<Route path="/" element={<Home/>} index /> 
 			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 
@@ -25,13 +23,7 @@ const ProjectRoutes = () => {
 			<Route path="/band" element={ <Band />} /> 
 			<Route path="/architect" element={ <Architect />} /> 
 			<Route path="/art" element={ <Art />} /> 
-			<Route path="/photo_portfolio" element={ <PhotoPortfolio />} /> 
-
-
-
-
-
-		
+			<Route path="/photo_portfolio" element={ <PhotoPortfolio />} /> 		
 			 
 
 		</Routes>
