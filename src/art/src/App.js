@@ -1,4 +1,3 @@
-import './App.css';
 import ContactForm from './components/ContactForm';
 import PhotoCard from './components/PhotoCard';
 import Header from './layouts/Header';
