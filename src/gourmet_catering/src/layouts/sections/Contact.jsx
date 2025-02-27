@@ -1,4 +1,5 @@
 import React from 'react';
+import InputField from '../../components/InputField';
 
 const Contact = () => {
   return (
@@ -19,43 +20,24 @@ const Contact = () => {
         catering@catering.com, or you can send us a message here:
       </p>
       <form action="/action_page.php" target="_blank">
-        <p>
-          <input
-            className="w3-input w3-padding-16"
-            type="text"
-            placeholder="Name"
-            required=""
-            name="Name"
-          />
-        </p>
-        <p>
-          <input
-            className="w3-input w3-padding-16"
-            type="number"
-            placeholder="How many people"
-            required=""
-            name="People"
-          />
-        </p>
-        <p>
-          <input
-            className="w3-input w3-padding-16"
-            type="datetime-local"
-            placeholder="Date and time"
-            required=""
-            name="date"
-            defaultValue="2020-11-16T20:00"
-          />
-        </p>
-        <p>
-          <input
-            className="w3-input w3-padding-16"
-            type="text"
-            placeholder="Message \ Special requirements"
-            required=""
-            name="Message"
-          />
-        </p>
+
+        <InputField
+          type="text" placeholder="Name" required="" name="Name"
+        />
+
+        <InputField  
+          type="number" placeholder="How many people" required="" name="People"
+        />
+
+        <InputField
+          type="datetime-local" placeholder="Date and time" required=""
+          name="date" defaultValue="2020-11-16T20:00"
+        />
+        
+        <InputField
+            type="text" placeholder="Message \ Special requirements"
+            required="" name="Message"
+        />
         <p>
           <button className="w3-button w3-light-grey w3-section" type="submit">
             SEND MESSAGE
