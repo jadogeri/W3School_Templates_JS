@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes} from "react-router";
 import React from 'react'
 import GourmetCatering from "../src/gourmet_catering/src/App.js"
 import ComingSoon from "../src/coming_soon/src/App.js"
+import Band from "../src/band/src/App.js"
+
 
 import Home from "./Home.jsx"
 
@@ -14,6 +16,8 @@ const ProjectRoutes = () => {
 			<Route path="/" element={<Home/>} index /> 
 			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 
 			<Route path="/coming_soon" element={ <ComingSoon />} /> 
+			<Route path="/band" element={ <Band />} /> 
+
 
 		
 			 
