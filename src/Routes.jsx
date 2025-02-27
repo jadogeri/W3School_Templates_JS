@@ -4,6 +4,8 @@ import GourmetCatering from "../src/gourmet_catering/src/App.js"
 import ComingSoon from "../src/coming_soon/src/App.js"
 import Band from "../src/band/src/App.js"
 import Architect from "../src/architect/src/App.js"
+import Art from "../src/art/src/App.js"
+
 
 
 
@@ -20,6 +22,8 @@ const ProjectRoutes = () => {
 			<Route path="/coming_soon" element={ <ComingSoon />} /> 
 			<Route path="/band" element={ <Band />} /> 
 			<Route path="/architect" element={ <Architect />} /> 
+			<Route path="/art" element={ <Art />} /> 
+
 
 
 
