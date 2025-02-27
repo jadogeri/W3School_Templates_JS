@@ -1,5 +1,4 @@
 import Footer from './layouts/Footer';
-import './App.css';
 import NavBar from './layouts/NavBar';
 import Header from './layouts/Header';
 import About from './layouts/sections/About';
@@ -19,6 +18,7 @@ function App() {
   <Header />
   
   {/* Page content */}
+  
   <div className="w3-content" style={{ maxWidth: 1100 }}>
     {/* About Section */}
     

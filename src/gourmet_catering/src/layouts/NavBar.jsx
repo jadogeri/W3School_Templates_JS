@@ -1,4 +1,5 @@
 import React from 'react';
+import NavLink from '../components/NavLink';
 
 const NavBar = () => {
   return (
@@ -13,15 +14,9 @@ const NavBar = () => {
     </a>
     {/* Right-sided navbar links. Hide them on small screens */}
     <div className="w3-right w3-hide-small">
-      <a href="#about" className="w3-bar-item w3-button" >
-        About
-      </a>
-      <a href="#menu" className="w3-bar-item w3-button">
-        Menu
-      </a>
-      <a href="#contact" className="w3-bar-item w3-button">
-        Contact
-      </a>
+      <NavLink href="#about" title="About" />
+      <NavLink href="#menu" title="Menu" />
+      <NavLink href="#contact" title="Contact" />
     </div>
   </div>
 </div>
