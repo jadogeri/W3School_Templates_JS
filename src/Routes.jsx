@@ -9,7 +9,7 @@ import PhotoPortfolio from "../src/photo_portfolio/src/App.js"
 
 
 
-
+//https://dev.to/jemmycodes/creating-an-image-slider-with-the-usestate-hook-3c8i
 
 import Home from "./Home.jsx"
 const ProjectRoutes = () => {

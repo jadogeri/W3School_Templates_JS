@@ -1,7 +1,6 @@
 import { myFunction } from "../src/utils/myFunction"
-import { carousel } from "./utils/carousel";
 function App() {
-  carousel()
+
   return (
 <>
   {/* Navbar */}
