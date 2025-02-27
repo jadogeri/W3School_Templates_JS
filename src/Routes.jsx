@@ -6,6 +6,8 @@ import Band from "../src/band/src/App.js"
 import Architect from "../src/architect/src/App.js"
 import Art from "../src/art/src/App.js"
 import PhotoPortfolio from "../src/photo_portfolio/src/App.js"
+import BlackAndWhitePhoto from "../src/black_and_white_photo/src/App.js"
+
 
 
 
@@ -24,6 +26,8 @@ const ProjectRoutes = () => {
 			<Route path="/architect" element={ <Architect />} /> 
 			<Route path="/art" element={ <Art />} /> 
 			<Route path="/photo_portfolio" element={ <PhotoPortfolio />} /> 		
+			<Route path="/black_and_white_photo" element={ <BlackAndWhitePhoto />} /> 		
+
 			 
 
 		</Routes>
