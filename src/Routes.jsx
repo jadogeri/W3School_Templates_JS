@@ -26,10 +26,7 @@ const ProjectRoutes = () => {
 			<Route path="/architect" element={ <Architect />} /> 
 			<Route path="/art" element={ <Art />} /> 
 			<Route path="/photo_portfolio" element={ <PhotoPortfolio />} /> 		
-			<Route path="/black_and_white_photo" element={ <BlackAndWhitePhoto />} /> 		
-
-			 
-
+			<Route path="/black_and_white_photo" element={ <BlackAndWhitePhoto />} />
 		</Routes>
 	</BrowserRouter>
   )
