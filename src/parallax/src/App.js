@@ -1,68 +1,28 @@
-import React from 'react';
+import './App.css';
+import { myFunction } from './utils/myFunction';
+import Footer from './layouts/Footer';
+import Contact from './layouts/sections/Contact';
+import ImageModal from './components/ImageModal';
+import ImageGrid from './components/ImageGrid';
+import AppBar from './layouts/AppBar';
+import NavBar from './layouts/NavBar';
 
-const App1 = () => {
+
+function App() {
+
+
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+
   return (
 <>
   {/* Navbar (sit on top) */}
   <div className="w3-top">
-    <div className="w3-bar" id="myNavbar">
-      <a
-        className="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-        href="javascript:void(0);"
-        onclick="toggleFunction()"
-        title="Toggle Navigation Menu"
-      >
-        <i className="fa fa-bars" />
-      </a>
-      <a href="#home" className="w3-bar-item w3-button">
-        HOME
-      </a>
-      <a href="#about" className="w3-bar-item w3-button w3-hide-small">
-        <i className="fa fa-user" /> ABOUT
-      </a>
-      <a href="#portfolio" className="w3-bar-item w3-button w3-hide-small">
-        <i className="fa fa-th" /> PORTFOLIO
-      </a>
-      <a href="#contact" className="w3-bar-item w3-button w3-hide-small">
-        <i className="fa fa-envelope" /> CONTACT
-      </a>
-      <a
-        href="#"
-        className="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
-      >
-        <i className="fa fa-search" />
-      </a>
-    </div>
+    <NavBar />
+
     {/* Navbar on small screens */}
-    <div
-      id="navDemo"
-      className="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
-    >
-      <a
-        href="#about"
-        className="w3-bar-item w3-button"
-        onclick="toggleFunction()"
-      >
-        ABOUT
-      </a>
-      <a
-        href="#portfolio"
-        className="w3-bar-item w3-button"
-        onclick="toggleFunction()"
-      >
-        PORTFOLIO
-      </a>
-      <a
-        href="#contact"
-        className="w3-bar-item w3-button"
-        onclick="toggleFunction()"
-      >
-        CONTACT
-      </a>
-      <a href="#" className="w3-bar-item w3-button">
-        SEARCH
-      </a>
-    </div>
+    <AppBar />
+  
   </div>
   {/* First Parallax Image with Logo Text */}
   <div className="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -101,7 +61,7 @@ const App1 = () => {
         </p>
         <br />
         <img
-          src="/w3images/avatar_hat.jpg"
+          src="https://www.w3schools.com/w3images/avatar_hat.jpg"
           className="w3-round w3-image w3-opacity w3-hover-opacity-off"
           alt="Photo of Me"
           width={500}
@@ -201,81 +161,9 @@ const App1 = () => {
     </p>
     <br />
     {/* Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) */}
-    <div className="w3-row-padding w3-center">
-      <div className="w3-col m3">
-        <img
-          src="/w3images/p1.jpg"
-          style={{ width: "100%" }}
-          onclick="onClick(this)"
-          className="w3-hover-opacity"
-          alt="The mist over the mountains"
-        />
-      </div>
-      <div className="w3-col m3">
-        <img
-          src="/w3images/p2.jpg"
-          style={{ width: "100%" }}
-          onclick="onClick(this)"
-          className="w3-hover-opacity"
-          alt="Coffee beans"
-        />
-      </div>
-      <div className="w3-col m3">
-        <img
-          src="/w3images/p3.jpg"
-          style={{ width: "100%" }}
-          onclick="onClick(this)"
-          className="w3-hover-opacity"
-          alt="Bear closeup"
-        />
-      </div>
-      <div className="w3-col m3">
-        <img
-          src="/w3images/p4.jpg"
-          style={{ width: "100%" }}
-          onclick="onClick(this)"
-          className="w3-hover-opacity"
-          alt="Quiet ocean"
-        />
-      </div>
-    </div>
-    <div className="w3-row-padding w3-center w3-section">
-      <div className="w3-col m3">
-        <img
-          src="/w3images/p5.jpg"
-          style={{ width: "100%" }}
-          onclick="onClick(this)"
-          className="w3-hover-opacity"
-          alt="The mist"
-        />
-      </div>
-      <div className="w3-col m3">
-        <img
-          src="/w3images/p6.jpg"
-          style={{ width: "100%" }}
-          onclick="onClick(this)"
-          className="w3-hover-opacity"
-          alt="My beloved typewriter"
-        />
-      </div>
-      <div className="w3-col m3">
-        <img
-          src="/w3images/p7.jpg"
-          style={{ width: "100%" }}
-          onclick="onClick(this)"
-          className="w3-hover-opacity"
-          alt="Empty ghost train"
-        />
-      </div>
-      <div className="w3-col m3">
-        <img
-          src="/w3images/p8.jpg"
-          style={{ width: "100%" }}
-          onclick="onClick(this)"
-          className="w3-hover-opacity"
-          alt="Sailing"
-        />
-      </div>
+
+      <ImageGrid />
+
       <button
         className="w3-button w3-padding-large w3-light-grey"
         style={{ marginTop: 64 }}
@@ -283,24 +171,10 @@ const App1 = () => {
         LOAD MORE
       </button>
     </div>
-  </div>
   {/* Modal for full size images on click*/}
-  <div
-    id="modal01"
-    className="w3-modal w3-black"
-    onclick="this.style.display='none'"
-  >
-    <span
-      className="w3-button w3-large w3-black w3-display-topright"
-      title="Close Modal Image"
-    >
-      <i className="fa fa-remove" />
-    </span>
-    <div className="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" className="w3-image" />
-      <p id="caption" className="w3-opacity w3-large" />
-    </div>
-  </div>
+
+  <ImageModal />  
+
   {/* Third Parallax Image with Portfolio Text */}
   <div className="bgimg-3 w3-display-container w3-opacity-min">
     <div className="w3-display-middle">
@@ -308,105 +182,17 @@ const App1 = () => {
     </div>
   </div>
   {/* Container (Contact Section) */}
-  <div className="w3-content w3-container w3-padding-64" id="contact">
-    <h3 className="w3-center">WHERE I WORK</h3>
-    <p className="w3-center">
-      <em>I'd love your feedback!</em>
-    </p>
-    <div className="w3-row w3-padding-32 w3-section">
-      <div className="w3-col m4 w3-container">
-        <img
-          src="/w3images/map.jpg"
-          className="w3-image w3-round"
-          style={{ width: "100%" }}
-        />
-      </div>
-      <div className="w3-col m8 w3-panel">
-        <div className="w3-large w3-margin-bottom">
-          <i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" />{" "}
-          Chicago, US
-          <br />
-          <i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" />{" "}
-          Phone: +00 151515
-          <br />
-          <i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" />{" "}
-          Email: mail@mail.com
-          <br />
-        </div>
-        <p>
-          Swing by for a cup of <i className="fa fa-coffee" />, or leave me a
-          note:
-        </p>
-        <form action="/action_page.php" target="_blank">
-          <div
-            className="w3-row-padding"
-            style={{ margin: "0 -16px 8px -16px" }}
-          >
-            <div className="w3-half">
-              <input
-                className="w3-input w3-border"
-                type="text"
-                placeholder="Name"
-                required=""
-                name="Name"
-              />
-            </div>
-            <div className="w3-half">
-              <input
-                className="w3-input w3-border"
-                type="text"
-                placeholder="Email"
-                required=""
-                name="Email"
-              />
-            </div>
-          </div>
-          <input
-            className="w3-input w3-border"
-            type="text"
-            placeholder="Message"
-            required=""
-            name="Message"
-          />
-          <button
-            className="w3-button w3-black w3-right w3-section"
-            type="submit"
-          >
-            <i className="fa fa-paper-plane" /> SEND MESSAGE
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
+
+  <Contact />
+
+
   {/* Footer */}
-  <footer className="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-    <a href="#home" className="w3-button w3-light-grey">
-      <i className="fa fa-arrow-up w3-margin-right" />
-      To the top
-    </a>
-    <div className="w3-xlarge w3-section">
-      <i className="fa fa-facebook-official w3-hover-opacity" />
-      <i className="fa fa-instagram w3-hover-opacity" />
-      <i className="fa fa-snapchat w3-hover-opacity" />
-      <i className="fa fa-pinterest-p w3-hover-opacity" />
-      <i className="fa fa-twitter w3-hover-opacity" />
-      <i className="fa fa-linkedin w3-hover-opacity" />
-    </div>
-    <p>
-      Powered by{" "}
-      <a
-        href="https://www.w3schools.com/w3css/default.asp"
-        title="W3.CSS"
-        target="_blank"
-        className="w3-hover-text-green"
-      >
-        w3.css
-      </a>
-    </p>
-  </footer>
+
+  <Footer />
+
 </>
 
   );
 }
 
-export default App1;
+export default App;
