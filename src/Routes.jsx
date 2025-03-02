@@ -9,6 +9,7 @@ import PhotoPortfolio from "../src/photo_portfolio/src/App.js"
 import BlackAndWhitePhoto from "../src/black_and_white_photo/src/App.js"
 import Parallax from "../src/parallax/src/App.js"
 import Blog from "../src/blog/src/App.js"
+import FoodBlog from "../src/food_blog/src/App.js"
 
 
 
@@ -33,6 +34,8 @@ const ProjectRoutes = () => {
 			<Route path="/black_and_white_photo" element={ <BlackAndWhitePhoto />} />
 			<Route path="/parallax" element={ <Parallax />} />
 			<Route path="/blog" element={ <Blog />} />
+			<Route path="/food_blog" element={ <FoodBlog />} />
+
 
 
 		</Routes>

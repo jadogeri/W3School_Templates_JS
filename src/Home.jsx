@@ -31,6 +31,10 @@ const Home = () => {
      <WebPage
        src="https://www.w3schools.com/w3css/img_temp_photo3.jpg" alt="photo portfolio" route="/photo_portfolio"
       />
+      <WebPage
+       src="https://www.w3schools.com/w3css/img_temp_food_blog.jpg" alt="food blog" route="/food_blog"
+      />
+
 
 
     </div>

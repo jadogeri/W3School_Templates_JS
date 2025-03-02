@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 
 
 const WebPage = ({
@@ -9,13 +8,12 @@ const WebPage = ({
     className,
     style
 }) => {
-    const navigate = useNavigate();
 
   return (
     <div className={className} style={style}>
         <img 
             src={src} alt={alt}
-            onClick={()=>{navigate(route)}} style={{cursor:"pointer"}}/>
+            onClick={()=>{window.open(route,"_blank")}} style={{cursor:"pointer"}}/>
     </div>
   )
 }
