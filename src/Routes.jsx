@@ -10,6 +10,8 @@ import BlackAndWhitePhoto from "../src/black_and_white_photo/src/App.js"
 import Parallax from "../src/parallax/src/App.js"
 import Blog from "../src/blog/src/App.js"
 import FoodBlog from "../src/food_blog/src/App.js"
+import FashionBlog from "../src/fashion_blog/src/App.js"
+
 
 
 
@@ -35,6 +37,8 @@ const ProjectRoutes = () => {
 			<Route path="/parallax" element={ <Parallax />} />
 			<Route path="/blog" element={ <Blog />} />
 			<Route path="/food_blog" element={ <FoodBlog />} />
+			<Route path="/fashion_blog" element={ <FashionBlog />} />
+
 
 
 

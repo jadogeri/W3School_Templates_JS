@@ -34,6 +34,11 @@ const Home = () => {
       <WebPage
        src="https://www.w3schools.com/w3css/img_temp_food_blog.jpg" alt="food blog" route="/food_blog"
       />
+      <WebPage
+       src="https://www.w3schools.com/w3css/img_temp_fashion_blog.jpg" alt="fashion blog" route="/fashion_blog"
+      />
+
+
 
 
 
