@@ -1,4 +1,5 @@
 import React from 'react';
+import Post from '../../components/Post';
 
 const Posts = () => {
   return (
@@ -7,50 +8,22 @@ const Posts = () => {
       <h4>Popular Posts</h4>
     </div>
     <ul className="w3-ul w3-hoverable w3-white">
-      <li className="w3-padding-16">
-        <img
-          src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
-          alt="Image"
-          className="w3-left w3-margin-right"
-          style={{ width: 50 }}
-        />
-        <span className="w3-large">Denim</span>
-        <br />
-        <span>Sed mattis nunc</span>
-      </li>
-      <li className="w3-padding-16">
-        <img
-          src="https://www.w3schools.com/w3images/bandmember.jpg"
-          alt="Image"
-          className="w3-left w3-margin-right"
-          style={{ width: 50 }}
-        />
-        <span className="w3-large">Sweaters</span>
-        <br />
-        <span>Praes tinci sed</span>
-      </li>
-      <li className="w3-padding-16">
-        <img
-          src="https://www.w3schools.com/w3images/workshop.jpg"
-          alt="Image"
-          className="w3-left w3-margin-right"
-          style={{ width: 50 }}
-        />
-        <span className="w3-large">Workshop</span>
-        <br />
-        <span>Ultricies congue</span>
-      </li>
-      <li className="w3-padding-16">
-        <img
-          src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
-          alt="Image"
-          className="w3-left w3-margin-right w3-sepia"
-          style={{ width: 50 }}
-        />
-        <span className="w3-large">Trends</span>
-        <br />
-        <span>Lorem ipsum dipsum</span>
-      </li>
+      <Post 
+        src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
+        name="Denim" title="Sed mattis nunc"
+      />
+      <Post 
+        src="https://www.w3schools.com/w3images/bandmember.jpg"
+        name="Sweaters" title="Praes tinci sed"
+      />
+      <Post 
+        src="https://www.w3schools.com/w3images/workshop.jpg"
+        name="Workshop"  title="Ultricies congue"
+      />
+      <Post 
+        src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
+        name="Trends"  title="Lorem ipsum dipsum"
+      />
     </ul>
   </div>
   );

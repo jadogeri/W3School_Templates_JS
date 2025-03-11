@@ -1,4 +1,5 @@
 import React from 'react';
+import FollowIcon from '../../components/FollowIcon';
 
 const Follow = () => {
   return (
@@ -7,12 +8,12 @@ const Follow = () => {
       <h4>Follow Me</h4>
     </div>
     <div className="w3-container w3-xlarge w3-padding">
-      <i className="fa fa-facebook-official w3-hover-opacity" />
-      <i className="fa fa-instagram w3-hover-opacity" />
-      <i className="fa fa-snapchat w3-hover-opacity" />
-      <i className="fa fa-pinterest-p w3-hover-opacity" />
-      <i className="fa fa-twitter w3-hover-opacity" />
-      <i className="fa fa-linkedin w3-hover-opacity" />
+      <FollowIcon icon="fa-facebook-official"/>
+      <FollowIcon icon="fa-instagram"/>
+      <FollowIcon icon="fa-snapchat"/>
+      <FollowIcon icon="fa-pinterest-p"/>
+      <FollowIcon icon="fa-twitter"/>
+      <FollowIcon icon="fa-linkedin"/>
     </div>
   </div>
   );

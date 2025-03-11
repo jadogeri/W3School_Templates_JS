@@ -3,6 +3,7 @@ import { openModal } from '../utils/openModal';
 
 const Banner = ({
     src,
+    alt,
     company,
     description
 }) => {
@@ -10,8 +11,8 @@ const Banner = ({
 <header className="w3-display-container w3-wide" id="home">
       <img
         className="w3-image"
-        src="https://www.w3schools.com/w3images/jane.jpg"
-        alt="Fashion Blog"
+        src={src}
+        alt={alt}
         width={1600}
         height={1060}
       />

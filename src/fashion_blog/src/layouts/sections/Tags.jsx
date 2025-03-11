@@ -1,4 +1,5 @@
 import React from 'react';
+import Tag from '../../components/Tag';
 
 const Tags = () => {
   return (
@@ -8,46 +9,21 @@ const Tags = () => {
     </div>
     <div className="w3-container w3-white">
       <p>
-        <span className="w3-tag w3-black w3-margin-bottom">Fashion</span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          New York
-        </span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          London
-        </span>
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Hats
-        </span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Norway
-        </span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Sweaters
-        </span>
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Ideas
-        </span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Deals
-        </span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Accessories
-        </span>
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          News
-        </span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Clothing
-        </span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Shopping
-        </span>
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Jeans
-        </span>{" "}
-        <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-          Trends
-        </span>
+        <Tag className="w3-black" label="Fashion"/>{" "}
+        <Tag className=" w3-light-grey w3-small" label="New York"  />{" "}
+        <Tag className=" w3-light-grey w3-small"  label="London"  />
+        <Tag className=" w3-light-grey w3-small"  label="Hats" />{" "}
+        <Tag className=" w3-light-grey w3-small"  label="Norway"  />{" "}
+        <Tag className=" w3-light-grey w3-small "  label="Sweaters" />
+        <Tag className=" w3-light-grey w3-small"  label="Ideas" />{" "}
+        <Tag className=" w3-light-grey w3-small "  label="Deals" />{" "}
+        <Tag className=" w3-light-grey w3-small "  label="Accessories" />
+        <Tag className=" w3-light-grey w3-small"  label="News" />{" "}
+        <Tag className=" w3-light-grey w3-small "  label="Clothing" />{" "}
+        <Tag className=" w3-light-grey w3-small "  label="Shopping" />
+        <Tag className=" w3-light-grey w3-small"  label="Jeans"  />{" "}
+        <Tag className=" w3-light-grey w3-small "  label="Trends"
+        />
       </p>
     </div>
   </div>

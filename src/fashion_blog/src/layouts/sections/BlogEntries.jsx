@@ -1,39 +1,44 @@
 import React from 'react';
+import Blog from '../../components/Blog';
 
 const BlogEntries = () => {
+  const commentArray1=[
+
+  ]
   return (
     <div className="w3-col l8 s12">
     {/* Blog entry */}
-    <div className="w3-container w3-white w3-margin w3-padding-large">
-      <div className="w3-center">
-        <h3>TITLE HEADING</h3>
-        <h5>
-          Title description, <span className="w3-opacity">May 2, 2016</span>
-        </h5>
-      </div>
-      <div className="w3-justify">
-        <img
-          src="https://www.w3schools.com/w3images/girl_hat.jpg"
-          alt="Girl Hat"
-          style={{ width: "100%" }}
-          className="w3-padding-16"
-        />
+    <Blog
+      comments={commentArray1} heading="TITLE HEADING"
+      description="Title description" date="May 2, 2016"
+      src="https://www.w3schools.com/w3images/girl_hat.jpg"
+      alt="Girl Hat"
+      paragraph1={ <p>
+        <strong>More Hats!</strong> I am crazy about hats these days. Some
+        text about this blog entry. Fashion fashion and mauris neque quam,
+        fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc
+        id lorem euismod placerat. Vivamus porttitor magna enim, ac
+        accumsan tortor cursus at. Phasellus sed ultricies mi non congue
+        ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae
+        justo condimentum, porta lectus vitae, ultricies congue gravida
+        diam non fringilla.
+      </p>}
+      paragraph2={
         <p>
-          <strong>More Hats!</strong> I am crazy about hats these days. Some
-          text about this blog entry. Fashion fashion and mauris neque quam,
-          fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc
-          id lorem euismod placerat. Vivamus porttitor magna enim, ac
-          accumsan tortor cursus at. Phasellus sed ultricies mi non congue
-          ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae
-          justo condimentum, porta lectus vitae, ultricies congue gravida
-          diam non fringilla.
-        </p>
-        <p>
-          Sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco.
-        </p>
+        Sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco.
+      </p>
+
+      }
+      
+      
+    />
+
+ 
+
+
         <p className="w3-left">
           <button
             className="w3-button w3-white w3-border"
@@ -75,6 +80,27 @@ const BlogEntries = () => {
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <hr />
     {/* Blog entry */}
     <div className="w3-container w3-white w3-margin w3-padding-large">

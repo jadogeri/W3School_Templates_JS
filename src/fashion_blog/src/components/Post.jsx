@@ -1,10 +1,23 @@
 import React from 'react';
 
-const Post = () => {
+const Post = ({
+  src,
+  name,
+  title
+
+}) => {
   return (
-    <div>
-      
-    </div>
+    <li className="w3-padding-16">
+    <img
+      src={src}
+      alt="Image"
+      className="w3-left w3-margin-right"
+      style={{ width: 50 }}
+    />
+    <span className="w3-large">{name}</span>
+    <br />
+    <span>{title}</span>
+  </li>
   );
 }
 

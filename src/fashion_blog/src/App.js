@@ -26,11 +26,14 @@ and is wrapped around the whole page content, except for the footer in this exam
     <Header company="JANE BLOGLIFE" name="Jane's world"
     />
     {/* Image header */}
-    <Banner />
+    <Banner 
+      src="https://www.w3schools.com/w3images/jane.jpg" alt="Fashion Blog"
+    />
 
     {/* Grid */}
     <div className="w3-row w3-padding w3-border">
       {/* Blog entries */}
+      {/* #TODO BLOG ENTRIES */}
       <BlogEntries />
 
       {/* About/Information menu */}

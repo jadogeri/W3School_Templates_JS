@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Tag = () => {
+const Tag = ({
+  label,
+  className
+}) => {
   return (
-    <div>
-      
-    </div>
+    <span className={`w3-tag w3-margin-bottom ${className}`}>{label}</span>
   );
 }
 
