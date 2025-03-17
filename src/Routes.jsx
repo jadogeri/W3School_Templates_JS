@@ -13,6 +13,8 @@ import FoodBlog from "../src/food_blog/src/App.js"
 import FashionBlog from "../src/fashion_blog/src/App.js"
 import TravelAgency from "../src/travel_agency/src/App.js"
 import Analytics from "../src/analytics/src/App.js"
+import PizzaRestaurant from "../src/pizza_restaurant/src/App.js"
+
 
 
 
@@ -44,6 +46,8 @@ const ProjectRoutes = () => {
 			<Route path="/fashion_blog" element={ <FashionBlog />} />
 			<Route path="/travel_agency" element={ <TravelAgency />} />
 			<Route path="/analytics" element={<Analytics />} />
+			<Route path="/pizza_restaurant" element={<PizzaRestaurant />} />
+
 
 		</Routes>
 	</BrowserRouter>
