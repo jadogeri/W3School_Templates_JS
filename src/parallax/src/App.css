@@ -6,6 +6,7 @@ body, html {
   line-height: 1.8;
 }
 
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -16,7 +17,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+  background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
   min-height: 100%;
 }
 
