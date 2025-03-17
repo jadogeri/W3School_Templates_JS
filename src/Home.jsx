@@ -22,7 +22,7 @@ const Home = () => {
      <WebPage
        src="https://www.w3schools.com/w3css/img_temp_gourmet_catering.jpg" alt="gourmet catering" route="/gourmet_catering"
       />
-            <WebPage 
+      <WebPage 
         src="https://www.w3schools.com/w3css/img_temp_comingsoon.jpg" alt="coming soon" route="/coming_soon" 
       />
       <WebPage 
@@ -37,8 +37,9 @@ const Home = () => {
       <WebPage
        src="https://www.w3schools.com/w3css/img_temp_fashion_blog.jpg" alt="fashion blog" route="/fashion_blog"
       />
-
-
+      <WebPage
+       src="https://www.w3schools.com/w3css/img_temp_travel.jpg" alt="travel agency" route="/travel_agency"
+      />
 
 
 
