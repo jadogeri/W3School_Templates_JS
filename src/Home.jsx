@@ -43,6 +43,10 @@ const Home = () => {
       <WebPage
        src="https://www.w3schools.com/w3css/img_temp_pizza.jpg" alt="pizza restaurant" route="/pizza_restaurant"
       />
+      <WebPage
+       src="https://www.w3schools.com/w3css/img_temp_analytics.jpg" alt="analytics" route="/analytics"
+      />
+
 
 
 
