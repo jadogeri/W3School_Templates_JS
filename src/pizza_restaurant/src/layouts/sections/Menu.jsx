@@ -1,4 +1,5 @@
 import React from 'react';
+import MenuCategory from '../../components/MenuCategory';
 
 const Menu = () => {
   return (
@@ -7,26 +8,19 @@ const Menu = () => {
         THE MENU
       </h1>
       <div className="w3-row w3-center w3-border w3-border-dark-grey">
-        <a
-          href="javascript:void(0)"
-          onclick="openMenu(event, 'Pizza');"
-          id="myLink"
-        >
-          <div className="w3-col s4 tablink w3-padding-large w3-hover-red">
-            Pizza
-          </div>
-        </a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-          <div className="w3-col s4 tablink w3-padding-large w3-hover-red">
-            Salads
-          </div>
-        </a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-          <div className="w3-col s4 tablink w3-padding-large w3-hover-red">
-            Starter
-          </div>
-        </a>
+
+        <MenuCategory 
+          category={"Pizza"} label={"Pizza"} id={"myLink"}        
+        />  
+        <MenuCategory 
+          category={"Pasta"} label={"Salads"} id={"pasta"}        
+        />  
+        <MenuCategory 
+          category={"Starter"} label={"Starter"} id={"starter"}        
+        />
+
       </div>
+      {/* #TODO BREAK CODE INTO REUSABLE COMPONENTS */}
       <div id="Pizza" className="w3-container menu w3-padding-32 w3-white">
         <h1>
           <b>Margherita</b>{" "}
