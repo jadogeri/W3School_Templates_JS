@@ -16,7 +16,7 @@ const NavBar = () => {
       <a href="#about" className="w3-bar-item w3-button">
         ABOUT
       </a>
-      <a href="#myMap" className="w3-bar-item w3-button">
+      <a href="#contact" className="w3-bar-item w3-button">
         CONTACT
       </a>
     </div>
