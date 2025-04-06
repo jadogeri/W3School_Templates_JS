@@ -11,7 +11,7 @@ const WebPage = ({
 
   return (
     <div className={className} style={style}>
-        <img 
+        <img width={400}
             src={src} alt={alt}
             onClick={()=>{window.open(route,"_blank")}} style={{cursor:"pointer"}}/>
     </div>
@@ -20,21 +20,3 @@ const WebPage = ({
 
 export default WebPage
 
-/**
- * 
- 
-
-
-
-
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-
-const Home = () => {
-    const navigate = useNavigate();
-  return (
-    <div>Home
-
-        <img src="https://www.w3schools.com/w3css/img_temp_architect.jpg" alt="architect"
-             onClick={()=>{navigate("/architect")}} style={{cursor:"pointer"}}/>
- */
