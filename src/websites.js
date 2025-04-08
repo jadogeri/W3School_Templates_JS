@@ -1,4 +1,4 @@
-export const websites = [
+export const websiteArray = [
     {
         src:"https://www.w3schools.com/w3css/img_temp_blog.jpg" , alt:"blog" , route:"/blog" 
       },
@@ -44,4 +44,7 @@ export const websites = [
      {
        src:"https://www.w3schools.com/w3css/img_temp_fifty.jpg" , alt:"screen 50" , route:"/screen_50"
       },
+      {
+        src:"https://www.w3schools.com/w3css/img_temp_startpage.jpg" , alt:"start page" , route:"/start_page"
+       },
 ]

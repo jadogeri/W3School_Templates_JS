@@ -15,6 +15,8 @@ import TravelAgency from "../src/travel_agency/src/App.js"
 import Analytics from "../src/analytics/src/App.js"
 import PizzaRestaurant from "../src/pizza_restaurant/src/App.js"
 import Screen50 from "../src/screen_50/src/App.js"
+import StartPage from "../src/start_page/src/App.js"
+
 
 
 
@@ -50,6 +52,8 @@ const ProjectRoutes = () => {
 			<Route path="/analytics" element={<Analytics />} />
 			<Route path="/pizza_restaurant" element={<PizzaRestaurant />} />
 			<Route path="/screen_50" element={<Screen50 />} />
+			<Route path="/start_page" element={<StartPage />} />
+
 
 
 
