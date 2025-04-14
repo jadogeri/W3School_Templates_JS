@@ -1,4 +1,7 @@
 export const websiteArray = [
+    {
+      src:"https://www.w3schools.com/w3css/img_temp_clothing_store.jpg" , alt:"clothing store" , route:"/clothing_store"
+    },
   
       {
         src:"https://www.w3schools.com/w3css/img_temp_cafe.jpg" , alt:"cafe" , route:"/cafe"
