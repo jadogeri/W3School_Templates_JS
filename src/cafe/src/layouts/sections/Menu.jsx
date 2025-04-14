@@ -1,8 +1,10 @@
 import React from 'react';
 import { openMenu } from '../../utils/openMenu';
+import MenuItem from '../../components/MenuItem';
 
 const Menu = () => {
   return (
+    <section>
     <div className="w3-container" id="menu">
       <div className="w3-content" style={{ maxWidth: 700 }}>
         <h5 className="w3-center w3-padding-48">
@@ -22,48 +24,58 @@ const Menu = () => {
           </a>
         </div>
         <div id="Eat" className="w3-container menu w3-padding-48 w3-card">
-          <h5>Bread Basket</h5>
-          <p className="w3-text-grey">
-            Assortment of fresh baked fruit breads and muffins 5.50
-          </p>
+          <MenuItem
+            item="read Basket"
+            description="Assortment of fresh baked fruit breads and muffins 5.50"
+          />
           <br />
-          <h5>Honey Almond Granola with Fruits</h5>
-          <p className="w3-text-grey">
-            Natural cereal of honey toasted oats, raisins, almonds and dates
-            7.00
-          </p>
+          <MenuItem
+            item="Honey Almond Granola with Fruits"
+            description="    Natural cereal of honey toasted oats, raisins, almonds and dates
+            7.00"
+          />
           <br />
-          <h5>Belgian Waffle</h5>
-          <p className="w3-text-grey">
-            Vanilla flavored batter with malted flour 7.50
-          </p>
+          <MenuItem
+            item="Belgian Waffle"
+            description="Vanilla flavored batter with malted flour 7.50"
+          />
           <br />
-          <h5>Scrambled eggs</h5>
-          <p className="w3-text-grey">
-            Scrambled eggs, roasted red pepper and garlic, with green onions
-            7.50
-          </p>
+          <MenuItem
+            item="Scrambled eggs"
+            description="Scrambled eggs, roasted red pepper and garlic, with green onions
+            7.50"
+          />
           <br />
-          <h5>Blueberry Pancakes</h5>
-          <p className="w3-text-grey">
-            With syrup, butter and lots of berries 8.50
-          </p>
+          <MenuItem
+            item="Blueberry Pancakes"
+            description=" With syrup, butter and lots of berries 8.50"
+          />
         </div>
         <div id="Drinks" className="w3-container menu w3-padding-48 w3-card">
-          <h5>Coffee</h5>
-          <p className="w3-text-grey">Regular coffee 2.50</p>
+          <MenuItem
+            item="Coffee"
+            description="Regular coffee 2.50"
+          />
           <br />
-          <h5>Chocolato</h5>
-          <p className="w3-text-grey">Chocolate espresso with milk 4.50</p>
+          <MenuItem
+            item="Chocolato"
+            description="Chocolate espresso with milk 4.50"
+          />
           <br />
-          <h5>Corretto</h5>
-          <p className="w3-text-grey">Whiskey and coffee 5.00</p>
+          <MenuItem
+            item="Corretto"
+            description="Whiskey and coffee 5.00"
+          />
           <br />
-          <h5>Iced tea</h5>
-          <p className="w3-text-grey">Hot tea, except not hot 3.00</p>
+          <MenuItem
+            item="Iced tea"
+            description="Hot tea, except not hot 3.00"
+          />
           <br />
-          <h5>Soda</h5>
-          <p className="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+          <MenuItem
+            item="Soda"
+            description="Coke, Sprite, Fanta, etc. 2.50"
+          />
         </div>
         <img
           src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt=""
@@ -71,6 +83,7 @@ const Menu = () => {
         />
       </div>
     </div>
+    </section>
   );
 }
 
