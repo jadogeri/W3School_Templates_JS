@@ -17,6 +17,7 @@ import PizzaRestaurant from "../src/pizza_restaurant/src/App.js"
 import Screen50 from "../src/screen_50/src/App.js"
 import StartPage from "../src/start_page/src/App.js"
 import Cafe from "../src/cafe/src/App.js"
+import CV from "../src/cv/src/App.js"
 import ClothingStore from "../src/clothing_store/src/App.js"
 
 
@@ -51,6 +52,7 @@ const ProjectRoutes = () => {
 			<Route path="/food_blog" element={ <FoodBlog />} />
 			<Route path="/fashion_blog" element={ <FashionBlog />} />
 			<Route path="/travel_agency" element={ <TravelAgency />} />
+			<Route path="/cv" element={ <CV />} />
 			<Route path="/analytics" element={<Analytics />} />
 			<Route path="/clothing_store" element={<ClothingStore />} />
 			<Route path="/pizza_restaurant" element={<PizzaRestaurant />} />

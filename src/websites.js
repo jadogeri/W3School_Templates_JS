@@ -1,11 +1,15 @@
 export const websiteArray = [
+  {
+    src:"https://www.w3schools.com/w3css/img_temp_cv.jpg" , alt:"cv" , route:"/cv"
+  },
+
     {
       src:"https://www.w3schools.com/w3css/img_temp_clothing_store.jpg" , alt:"clothing store" , route:"/clothing_store"
     },
-  
-      {
-        src:"https://www.w3schools.com/w3css/img_temp_cafe.jpg" , alt:"cafe" , route:"/cafe"
-       },
+
+    {
+      src:"https://www.w3schools.com/w3css/img_temp_cafe.jpg" , alt:"cafe" , route:"/cafe"
+    },
     {
         src:"https://www.w3schools.com/w3css/img_temp_blog.jpg" , alt:"blog" , route:"/blog" 
       },
