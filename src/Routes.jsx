@@ -23,6 +23,8 @@ import DarkPortfolio from "../src/dark_portfolio/src/App.js"
 import Travel from "../src/travel/src/App.js"
 import WeddingInvitation from "../src/wedding_invitation/src/App.js"
 import ModalRestaurant from "../src/modal_restaurant/src/App.js"
+import Photo from "../src/photo/src/App.js"
+
 
 
 
@@ -66,6 +68,8 @@ const ProjectRoutes = () => {
 			<Route path="/travel" element={<Travel />} />
 			<Route path="/wedding_invitation" element={<WeddingInvitation />} />
 			<Route path="/modal_restaurant" element={<ModalRestaurant />} />
+			<Route path="/photo" element={<Photo />} />
+
 
 
 
