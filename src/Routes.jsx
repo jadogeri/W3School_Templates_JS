@@ -21,6 +21,8 @@ import CV from "../src/cv/src/App.js"
 import ClothingStore from "../src/clothing_store/src/App.js"
 import DarkPortfolio from "../src/dark_portfolio/src/App.js"
 import Travel from "../src/travel/src/App.js"
+import WeddingInvitation from "../src/wedding_invitation/src/App.js"
+
 
 
 
@@ -64,6 +66,8 @@ const ProjectRoutes = () => {
 			<Route path="/start_page" element={<StartPage />} />	
 			<Route path="/dark_portfolio" element={<DarkPortfolio />} />
 			<Route path="/travel" element={<Travel />} />
+			<Route path="/wedding_invitation" element={<WeddingInvitation />} />
+
 
 
 
