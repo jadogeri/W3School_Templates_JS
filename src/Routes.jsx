@@ -24,6 +24,10 @@ import Travel from "../src/travel/src/App.js"
 import WeddingInvitation from "../src/wedding_invitation/src/App.js"
 import ModalRestaurant from "../src/modal_restaurant/src/App.js"
 import Photo from "../src/photo/src/App.js"
+import PeoplePortfolio from "../src/people_portfolio/src/App.js"
+import PeoplePortfolio2 from "../src/people_portfolio_2/src/App.js"
+
+
 
 
 
@@ -39,6 +43,7 @@ import Photo from "../src/photo/src/App.js"
 //https://dev.to/jemmycodes/creating-an-image-slider-with-the-usestate-hook-3c8i
 
 import Home from "./Home.jsx"
+import NoPage from "./NoPage.jsx";
 const ProjectRoutes = () => {
 
   return (
@@ -69,6 +74,12 @@ const ProjectRoutes = () => {
 			<Route path="/wedding_invitation" element={<WeddingInvitation />} />
 			<Route path="/modal_restaurant" element={<ModalRestaurant />} />
 			<Route path="/photo" element={<Photo />} />
+			<Route path="/people_portfolio" element={<PeoplePortfolio />} />
+			<Route path="/people_portfolio_2" element={<PeoplePortfolio2 />} />
+			<Route path="*" element={<NoPage />} />
+
+
+
 
 
 

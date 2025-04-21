@@ -1,5 +1,11 @@
 export const websiteArray = [
   {
+    src:"https://www.w3schools.com/w3css/img_temp_portfolio3.jpg" , alt:"people portfolio 2" , route:"/people_portfolio_2"
+  },
+  {
+    src:"https://www.w3schools.com/w3css/img_temp_portfolio2.jpg" , alt:"people portfolio" , route:"/people_portfolio"
+  },
+  {
     src:"https://www.w3schools.com/w3css/img_temp_photo.jpg" , alt:"photo" , route:"/photo"
   },
   {
