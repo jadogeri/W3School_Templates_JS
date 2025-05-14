@@ -11,9 +11,10 @@ const WebPage = ({
 
   return (
     <div className={className} style={style}>
-        <img width={400}
+        <img width={350}
             src={src} alt={alt}
-            onClick={()=>{window.open(route,"_blank")}} style={{cursor:"pointer"}}/>
+            onClick={()=>{window.open(route,"_blank")}} 
+            style={{cursor:"pointer", margin:10}}/>
     </div>
   )
 }
