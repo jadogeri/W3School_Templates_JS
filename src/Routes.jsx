@@ -47,7 +47,7 @@ import NoPage from "./NoPage.jsx";
 const ProjectRoutes = () => {
 
   return (
-	<BrowserRouter >
+	<BrowserRouter basename={"/"}>
 		<Routes >				
 			<Route path="/" element={<Home/>} index /> 
 			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 
