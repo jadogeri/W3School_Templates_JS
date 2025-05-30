@@ -71,7 +71,7 @@ export const websiteArray = [
        src:"https://www.w3schools.com/w3css/img_temp_pizza.jpg" , alt:"pizza restaurant" , route:"/pizza_restaurant"
       },
      {
-       src:"https://www.w3schools.com/w3css/img_temp_analytics.jpg" , alt:"analytics" , route:"/analytics"
+       src:"https://www.w3schools.com/w3css/img_temp_analytics.jpg" , alt:"analytics" , route:"/W3School_Templates_JS/analytics"
       },
      {
        src:"https://www.w3schools.com/w3css/img_temp_fifty.jpg" , alt:"screen 50" , route:"/screen_50"
