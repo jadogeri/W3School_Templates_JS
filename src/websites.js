@@ -80,9 +80,9 @@ export const websiteArray = [
         src:"https://www.w3schools.com/w3css/img_temp_startpage.jpg" , alt:"start page" , route:"/start_page"
        },
       {
-        src:"https://www.w3schools.com/w3css/img_temp_app_launch.jpg" , alt:"app launch" , route:"/W3School_Templates_JS/app_launch"
+        src:"https://www.w3schools.com/w3css/img_temp_app_launch.jpg" , alt:"app launch" , route:"#/W3School_Templates_JS/app_launch"
        },
       {
-        src:"https://www.w3schools.com/w3css/img_temp_apartment_rental.jpg" , alt:"apartment rental" , route:"/W3School_Templates_JS/apartment_rental"
+        src:"https://www.w3schools.com/w3css/img_temp_apartment_rental.jpg" , alt:"apartment rental" , route:"/apartment_rental"
       },
 ]
