@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes} from "react-router";
+import { BrowserRouter, Route, Routes} from "react-router";
 import React from 'react'
 import GourmetCatering from "../src/gourmet_catering/src/App.js"
 import ComingSoon from "../src/coming_soon/src/App.js"
@@ -50,8 +50,7 @@ import NoPage from "./NoPage.jsx";
 const ProjectRoutes = () => {
 
   return (
-	<HashRouter //basename="/W3School_Templates_JS"
-	 >
+	<BrowserRouter basename="/W3School_Templates_JS" >
 		<Routes >				
 			<Route path="/" element={<Home/>} index /> 
 			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 
@@ -92,7 +91,7 @@ const ProjectRoutes = () => {
 
 
 		</Routes>
-	</HashRouter>
+	</BrowserRouter>
   )
 }
 
