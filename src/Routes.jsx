@@ -50,7 +50,11 @@ import NoPage from "./NoPage.jsx";
 const ProjectRoutes = () => {
 
   return (
+<<<<<<< HEAD
 	<BrowserRouter basename="/W3School_Templates_JS" >
+=======
+	<BrowserRouter>
+>>>>>>> b13c29293c137eb27a300abea9cc5ab483166d00
 		<Routes >				
 			<Route path="/" element={<Home/>} index /> 
 			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 
