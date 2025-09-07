@@ -51,7 +51,6 @@ const ProjectRoutes = () => {
 
   return (
 	<BrowserRouter basename="/W3School_Templates_JS" >
-
 		<Routes >				
 			<Route path="/" element={<Home/>} index /> 
 			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 
@@ -83,14 +82,6 @@ const ProjectRoutes = () => {
 			<Route path="/people_portfolio_2" element={<PeoplePortfolio2 />} />
 			<Route path="/apartment_rental" element={<ApartmentRental />} />
 			<Route path="*" element={<NoPage />} />
-
-
-
-
-
-
-
-
 		</Routes>
 	</BrowserRouter>
   )
