@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from "react-router";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 import React from 'react'
 import GourmetCatering from "../src/gourmet_catering/src/App.js"
 import ComingSoon from "../src/coming_soon/src/App.js"
