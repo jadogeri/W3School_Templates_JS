@@ -53,35 +53,35 @@ const ProjectRoutes = () => {
 	<HashRouter //basename="/W3School_Templates_JS" 
 	>
 		<Routes >				
-			<Route path="/" element={<Home/>} index /> 
-			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 
-			<Route path="/coming_soon" element={ <ComingSoon />} /> 
-			<Route path="/band" element={ <Band />} /> 
-			<Route path="/architect" element={ <Architect />} /> 
-			<Route path="/art" element={ <Art />} /> 
-			<Route path="/photo_portfolio" element={ <PhotoPortfolio />} /> 		
-			<Route path="/black_and_white_photo" element={ <BlackAndWhitePhoto />} />
-			<Route path="/parallax" element={ <Parallax />} />
-			<Route path="/cafe" element={ <Cafe />} />
-			<Route path="/blog" element={ <Blog />} />
-			<Route path="/food_blog" element={ <FoodBlog />} />
-			<Route path="/fashion_blog" element={ <FashionBlog />} />
-			<Route path="/travel_agency" element={ <TravelAgency />} />
-			<Route path="/cv" element={ <CV />} />
-			<Route path="/analytics" element={<Analytics />} />
-			<Route path="/clothing_store" element={<ClothingStore />} />
-			<Route path="/pizza_restaurant" element={<PizzaRestaurant />} />
-			<Route path="/screen_50" element={<Screen50 />} />
-			<Route path="/start_page" element={<StartPage />} />	
-			<Route path="/dark_portfolio" element={<DarkPortfolio />} />
-			<Route path="/travel" element={<Travel />} />
-			<Route path="/wedding_invitation" element={<WeddingInvitation />} />
-			<Route path="/modal_restaurant" element={<ModalRestaurant />} />
-			<Route path="/photo" element={<Photo />} />
-			<Route path="/people_portfolio" element={<PeoplePortfolio />} />
-			<Route path="/app_launch" element={<AppLaunch />} />
-			<Route path="/people_portfolio_2" element={<PeoplePortfolio2 />} />
-			<Route path="/apartment_rental" element={<ApartmentRental />} />
+			<Route path="/#/" element={<Home/>} index /> 
+			<Route path="/#/gourmet_catering" element={ <GourmetCatering />} /> 
+			<Route path="/#/coming_soon" element={ <ComingSoon />} /> 
+			<Route path="/#/band" element={ <Band />} /> 
+			<Route path="/#/architect" element={ <Architect />} /> 
+			<Route path="/#/art" element={ <Art />} /> 
+			<Route path="/#/photo_portfolio" element={ <PhotoPortfolio />} /> 		
+			<Route path="/#/black_and_white_photo" element={ <BlackAndWhitePhoto />} />
+			<Route path="/#/parallax" element={ <Parallax />} />
+			<Route path="/#/cafe" element={ <Cafe />} />
+			<Route path="/#/blog" element={ <Blog />} />
+			<Route path="/#/food_blog" element={ <FoodBlog />} />
+			<Route path="/#/fashion_blog" element={ <FashionBlog />} />
+			<Route path="/#/travel_agency" element={ <TravelAgency />} />
+			<Route path="/#/cv" element={ <CV />} />
+			<Route path="/#/analytics" element={<Analytics />} />
+			<Route path="/#/clothing_store" element={<ClothingStore />} />
+			<Route path="/#/pizza_restaurant" element={<PizzaRestaurant />} />
+			<Route path="/#/screen_50" element={<Screen50 />} />
+			<Route path="/#/start_page" element={<StartPage />} />	
+			<Route path="/#/dark_portfolio" element={<DarkPortfolio />} />
+			<Route path="/#/travel" element={<Travel />} />
+			<Route path="/#/wedding_invitation" element={<WeddingInvitation />} />
+			<Route path="/#/modal_restaurant" element={<ModalRestaurant />} />
+			<Route path="/#/photo" element={<Photo />} />
+			<Route path="/#/people_portfolio" element={<PeoplePortfolio />} />
+			<Route path="/#/app_launch" element={<AppLaunch />} />
+			<Route path="/#/people_portfolio_2" element={<PeoplePortfolio2 />} />
+			<Route path="/#/apartment_rental" element={<ApartmentRental />} />
 			<Route path="*" element={<NoPage />} />
 
 
