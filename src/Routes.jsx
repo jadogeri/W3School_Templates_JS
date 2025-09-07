@@ -25,7 +25,10 @@ import WeddingInvitation from "../src/wedding_invitation/src/App.js"
 import ModalRestaurant from "../src/modal_restaurant/src/App.js"
 import Photo from "../src/photo/src/App.js"
 import PeoplePortfolio from "../src/people_portfolio/src/App.js"
+import AppLaunch from "../src/app_launch/src/App.js"
 import PeoplePortfolio2 from "../src/people_portfolio_2/src/App.js"
+import ApartmentRental from "../src/apartment_rental/src/App.js"
+
 
 
 
@@ -75,7 +78,9 @@ const ProjectRoutes = () => {
 			<Route path="/modal_restaurant" element={<ModalRestaurant />} />
 			<Route path="/photo" element={<Photo />} />
 			<Route path="/people_portfolio" element={<PeoplePortfolio />} />
+			<Route path="/app_launch" element={<AppLaunch />} />
 			<Route path="/people_portfolio_2" element={<PeoplePortfolio2 />} />
+			<Route path="/apartment_rental" element={<ApartmentRental />} />
 			<Route path="*" element={<NoPage />} />
 
 
