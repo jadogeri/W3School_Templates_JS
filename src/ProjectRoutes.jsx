@@ -1,33 +1,33 @@
-import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router";
 import React from 'react'
-import GourmetCatering from "../src/gourmet_catering/src/App.js"
-import ComingSoon from "../src/coming_soon/src/App.js"
-import Band from "../src/band/src/App.js"
-import Architect from "../src/architect/src/App.js"
-import Art from "../src/art/src/App.js"
-import PhotoPortfolio from "../src/photo_portfolio/src/App.js"
-import BlackAndWhitePhoto from "../src/black_and_white_photo/src/App.js"
-import Parallax from "../src/parallax/src/App.js"
-import Blog from "../src/blog/src/App.js"
-import FoodBlog from "../src/food_blog/src/App.js"
-import FashionBlog from "../src/fashion_blog/src/App.js"
-import TravelAgency from "../src/travel_agency/src/App.js"
-import Analytics from "../src/analytics/src/App.js"
-import PizzaRestaurant from "../src/pizza_restaurant/src/App.js"
-import Screen50 from "../src/screen_50/src/App.js"
-import StartPage from "../src/start_page/src/App.js"
-import Cafe from "../src/cafe/src/App.js"
-import CV from "../src/cv/src/App.js"
-import ClothingStore from "../src/clothing_store/src/App.js"
-import DarkPortfolio from "../src/dark_portfolio/src/App.js"
-import Travel from "../src/travel/src/App.js"
-import WeddingInvitation from "../src/wedding_invitation/src/App.js"
-import ModalRestaurant from "../src/modal_restaurant/src/App.js"
-import Photo from "../src/photo/src/App.js"
-import PeoplePortfolio from "../src/people_portfolio/src/App.js"
-import AppLaunch from "../src/app_launch/src/App.js"
-import PeoplePortfolio2 from "../src/people_portfolio_2/src/App.js"
-import ApartmentRental from "../src/apartment_rental/src/App.js"
+import GourmetCatering from "./gourmet_catering/src/App.js"
+import ComingSoon from "./coming_soon/src/App.js"
+import Band from "./band/src/App.js"
+import Architect from "./architect/src/App.js"
+import Art from "./art/src/App.js"
+import PhotoPortfolio from "./photo_portfolio/src/App.js"
+import BlackAndWhitePhoto from "./black_and_white_photo/src/App.js"
+import Parallax from "./parallax/src/App.js"
+import Blog from "./blog/src/App.js"
+import FoodBlog from "./food_blog/src/App.js"
+import FashionBlog from "./fashion_blog/src/App.js"
+import TravelAgency from "./travel_agency/src/App.js"
+import Analytics from "./analytics/src/App.js"
+import PizzaRestaurant from "./pizza_restaurant/src/App.js"
+import Screen50 from "./screen_50/src/App.js"
+import StartPage from "./start_page/src/App.js"
+import Cafe from "./cafe/src/App.js"
+import CV from "./cv/src/App.js"
+import ClothingStore from "./clothing_store/src/App.js"
+import DarkPortfolio from "./dark_portfolio/src/App.js"
+import Travel from "./travel/src/App.js"
+import WeddingInvitation from "./wedding_invitation/src/App.js"
+import ModalRestaurant from "./modal_restaurant/src/App.js"
+import Photo from "./photo/src/App.js"
+import PeoplePortfolio from "./people_portfolio/src/App.js"
+import AppLaunch from "./app_launch/src/App.js"
+import PeoplePortfolio2 from "./people_portfolio_2/src/App.js"
+import ApartmentRental from "./apartment_rental/src/App.js"
 
 
 
@@ -50,7 +50,8 @@ import NoPage from "./NoPage.jsx";
 const ProjectRoutes = () => {
 
   return (
-	<BrowserRouter basename="/W3School_Templates_JS" >
+	<BrowserRouter basename="/W3School_Templates_JS" 
+	>
 		<Routes >				
 			<Route path="/" element={<Home/>} index /> 
 			<Route path="/gourmet_catering" element={ <GourmetCatering />} /> 

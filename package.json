@@ -2,7 +2,7 @@
   "name": "templates",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jadogeri.github.io/W3School_Templates_JS/#",
+  "homepage": "https://jadogeri.github.io/W3School_Templates_JS/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -11,7 +11,7 @@
     "font-awesome": "^4.7.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.2.0",
+    "react-router-dom": "^7.8.2",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
