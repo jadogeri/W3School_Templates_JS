@@ -81,7 +81,7 @@ const ProjectRoutes = () => {
 			<Route path="/people_portfolio" element={<PeoplePortfolio />} />
 			<Route path="/app_launch" element={<AppLaunch />} />
 			<Route path="/people_portfolio_2" element={<PeoplePortfolio2 />} />
-			<Route path="/#/apartment_rental" element={<ApartmentRental />} />
+			<Route path="/apartment_rental" element={<ApartmentRental />} />
 			<Route path="*" element={<NoPage />} />
 		</Routes>
 	</HashRouter>
