@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const WebPage = ({
@@ -9,12 +10,11 @@ const WebPage = ({
 }) => {
 
   return (
-    <div className={className} style={style}>
+    <Link className={className} style={style} to={route} target="_blank">
         <img width={350}
             src={src} alt={alt}
-            onClick={()=>{window.open(route,"_blank")}} 
             style={{cursor:"pointer", margin:10}}/>
-    </div>
+    </Link>
   )
 }
 
