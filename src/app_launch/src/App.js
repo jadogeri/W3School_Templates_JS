@@ -5,6 +5,7 @@ import Pricing from "./layouts/sections/Pricing";
 import Features from "./layouts/sections/Features";
 import Clarity from "./layouts/sections/Clarity";
 import DownloadModal from "./components/DownloadModal";
+import TakeTourButton from "./components/TakeTourButton";
 // Slideshow
 var slideIndex = 1;
 
@@ -128,18 +129,14 @@ function App() {
         </div>
       </div>
     </div>
-    <a
-      className="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey"
+    <TakeTourButton 
       onClick={()=>{plusDivs(1)}}
-    >
-      Take Tour <i className="fa fa-angle-right" />
-    </a>
-    <a
-      className="w3-button w3-block w3-black w3-hide-large w3-hide-medium"
+      className="w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey"    
+    />
+    <TakeTourButton 
       onClick={()=>{plusDivs(1)}}
-    >
-      Take Tour <i className="fa fa-angle-right" />
-    </a>
+      className="w3-block w3-hide-large w3-hide-medium"    
+    />
   </header>
   {/* The App Section */}
 
