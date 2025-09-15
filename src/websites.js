@@ -88,4 +88,10 @@ export const websiteArray = [
       {
         src:"https://www.w3schools.com/w3css/img_temp_hotel.jpg" , alt:"hotel" , route:"/hotel"
       },
+      {
+        src:"https://www.w3schools.com/Css/img_temp_design.jpg" , alt:"house design" , route:"/house_design"
+      },
 ]
+
+
+

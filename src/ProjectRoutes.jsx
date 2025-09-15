@@ -29,6 +29,8 @@ import AppLaunch from "./app_launch/src/App.js"
 import PeoplePortfolio2 from "./people_portfolio_2/src/App.js"
 import ApartmentRental from "./apartment_rental/src/App.js"
 import Hotel from "./hotel/src/App.js"
+import HouseDesign from "./house_design/src/App.js"
+
 
 
 
@@ -85,6 +87,8 @@ const ProjectRoutes = () => {
 			<Route path="/people_portfolio_2" element={<PeoplePortfolio2 />} />
 			<Route path="/apartment_rental" element={<ApartmentRental />} />
 			<Route path="/hotel" element={<Hotel />} />
+			<Route path="/house_design" element={<HouseDesign />} />
+
 			<Route path="*" element={<NoPage />} />
 		</Routes>
 	</BrowserRouter>
