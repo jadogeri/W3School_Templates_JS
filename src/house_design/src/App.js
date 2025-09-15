@@ -1,5 +1,6 @@
 import './App.css';
-import Footer from './layouts/Footer';
+import Footer from "./layouts/Footer"
+import HouseCard from './components/HouseCard';
 
 function App() {
   return (
@@ -28,16 +29,18 @@ function App() {
     <h4>MOST RECENT WORK:</h4>
   </div>
   <div className="w3-row">
-    <div className="w3-half w3-container">
-      <img src="https://www.w3schools.com/w3images/house1.jpg" style={{ width: "100%" }} />
-    </div>
-    <div className="w3-half w3-container">
-      <img src="https://www.w3schools.com/w3images/house_arch.jpg" style={{ width: "100%" }} />
-      <p className="w3-xlarge w3-text-grey">
+    <HouseCard
+    src="https://www.w3schools.com/w3images/house1.jpg"
+    />
+    <HouseCard
+      src="https://www.w3schools.com/w3images/house_arch.jpg"
+      features={      <p className="w3-xlarge w3-text-grey">
         Demos, Logos, Reports, Names, Events, Media, Wordpress, Google, Books,
         Optimisations
       </p>
-    </div>
+
+      }
+    />
   </div>
   {/* Footer */}
   <div className="w3-row w3-section">
