@@ -4,6 +4,8 @@ import { w3_close } from './utils/w3_close';
 import { w3_open } from './utils/w3_open';
 import { useEffect, useState } from 'react';
 import { myFunc } from './utils/myFunc';
+import MessageModal from './components/MessageModal';
+import SideBar from './layouts/SideBar';
 
 
 function App() {
@@ -13,15 +15,13 @@ function App() {
   const handleOpenTab = ()=>{
     var openTab = document.getElementById("firstTab");
     openTab.click();
-
-
   }
 
-    const handleOpenInbox = ()=>{
-      var openInbox = document.getElementById("myBtn");
-      openInbox.click();
+  const handleOpenInbox = ()=>{
+    var openInbox = document.getElementById("myBtn");
+    openInbox.click();
+  }
 
-    }
   useEffect(()=>{
     handleOpenInbox();
     handleOpenTab();
@@ -31,150 +31,12 @@ function App() {
   return (
 <>
   {/* Side Navigation */}
-  <nav
-    className="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card"
-    style={{ zIndex: 3, width: 320 }}
-    id="mySidebar"
-  >
-    <a
-      // href="javascript:void(0)"
-      className="w3-bar-item w3-button w3-border-bottom w3-large"
-    >
-      <img
-        src="https://www.w3schools.com/images/w3schools.png"
-        style={{ width: "60%" }}
-      />
-    </a>
-    <a
-      // href="javascript:void(0)"
-      onClick={()=>{w3_close()}}
-      title="Close Sidemenu"
-      className="w3-bar-item w3-button w3-hide-large w3-large"
-    >
-      Close <i className="fa fa-remove" />
-    </a>
-    <a
-      // href="javascript:void(0)"
-      className="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align"
-      onClick={()=>{document.getElementById('id01').style.display='block'}}
-    >
-      New Message <i className="w3-padding fa fa-pencil" />
-    </a>
-    <a
-      id="myBtn"
-      onClick={()=>{myFunc('Demo1')}}
-      // href="javascript:void(0)"
-      className="w3-bar-item w3-button"
-    >
-      <i className="fa fa-inbox w3-margin-right" />
-      Inbox (3)
-      <i className="fa fa-caret-down w3-margin-left" />
-    </a>
-    <div id="Demo1" className="w3-hide w3-animate-left">
-      <a
-        // href="javascript:void(0)"
-        className="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
-        onClick={()=>{openMail('Borge');w3_close();}}
-        id="firstTab"
-      >
-        <div className="w3-container">
-          <img
-            className="w3-round w3-margin-right"
-            src="https://www.w3schools.com/w3images/avatar3.png"
-            style={{ width: "15%" }}
-          />
-          <span className="w3-opacity w3-large">Borge Refsnes</span>
-          <h6>Subject: Remember Me</h6>
-          <p>Hello, i just wanted to let you know that i'll be home at...</p>
-        </div>
-      </a>
-      <a
-        // href="javascript:void(0)"
-        className="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
-        onClick={()=>{openMail('Jane');w3_close();}}
-      >
-        <div className="w3-container">
-          <img
-            className="w3-round w3-margin-right"
-            src="https://www.w3schools.com/w3images/avatar5.png"
-            style={{ width: "15%" }}
-          />
-          <span className="w3-opacity w3-large">Jane Doe</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        </div>
-      </a>
-      <a
-        // href="javascript:void(0)"
-        className="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey"
-        onClick={()=>{openMail('John');w3_close();}}
-      >
-        <div className="w3-container">
-          <img
-            className="w3-round w3-margin-right"
-            src="https://www.w3schools.com/w3images/avatar2.png"
-            style={{ width: "15%" }}
-          />
-          <span className="w3-opacity w3-large">John Doe</span>
-          <p>Welcome!</p>
-        </div>
-      </a>
-    </div>
-    <a href="#" className="w3-bar-item w3-button">
-      <i className="fa fa-paper-plane w3-margin-right" />
-      Sent
-    </a>
-    <a href="#" className="w3-bar-item w3-button">
-      <i className="fa fa-hourglass-end w3-margin-right" />
-      Drafts
-    </a>
-    <a href="#" className="w3-bar-item w3-button">
-      <i className="fa fa-trash w3-margin-right" />
-      Trash
-    </a>
-  </nav>
+
+  <SideBar />
+ 
   {/* Modal that pops up when you click on "New Message" */}
-  <div id="id01" className="w3-modal" style={{ zIndex: 4 }}>
-    <div className="w3-modal-content w3-animate-zoom">
-      <div className="w3-container w3-padding w3-red">
-        <span
-          onClick={()=>{document.getElementById('id01').style.display='none'}}
-          className="w3-button w3-red w3-right w3-xxlarge"
-        >
-          <i className="fa fa-remove" />
-        </span>
-        <h2>Send Mail</h2>
-      </div>
-      <div className="w3-panel">
-        <label>To</label>
-        <input className="w3-input w3-border w3-margin-bottom" type="text" />
-        <label>From</label>
-        <input className="w3-input w3-border w3-margin-bottom" type="text" />
-        <label>Subject</label>
-        <input className="w3-input w3-border w3-margin-bottom" type="text" />
-        <input
-          className="w3-input w3-border w3-margin-bottom"
-          style={{ height: 150 }}
-          placeholder="What's on your mind?"
-        />
-        <div className="w3-section">
-          <a
-            className="w3-button w3-red"
-            onClick={()=>{document.getElementById('id01').style.display='none'}}
-          >
-            Cancel &nbsp;
-            <i className="fa fa-remove" />
-          </a>
-          <a
-            className="w3-button w3-light-grey w3-right"
-            onClick={()=>{document.getElementById('id01').style.display='none'}}
-          >
-            Send &nbsp;
-            <i className="fa fa-paper-plane" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <MessageModal />
+
   {/* Overlay effect when opening the side navigation on small screens */}
   <div
     className="w3-overlay w3-hide-large w3-animate-opacity"
