@@ -94,6 +94,9 @@ export const websiteArray = [
       {
         src:"https://www.w3schools.com/w3css/img_temp_interior_design.jpg" , alt:"interior design" , route:"/interior_design"
       },
+      {
+        src:"https://www.w3schools.com/w3css/img_temp_mail.jpg" , alt:"mail" , route:"/mail"
+      },
 ]
 
 
