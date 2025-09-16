@@ -1,8 +1,8 @@
 import React from 'react'
 import { w3_close } from '../utils/w3_close'
-import { openMail } from '../utils/openMail'
 import { myFunc } from '../utils/myFunc'
 import Message from '../components/Message'
+import SideBarItem from '../components/SideBarItem'
 
 const SideBar = () => {
   return (
@@ -62,18 +62,18 @@ const SideBar = () => {
        name="John Doe" message="Welcome!"
       />
     </div>
-    <a href="#" className="w3-bar-item w3-button">
-      <i className="fa fa-paper-plane w3-margin-right" />
-      Sent
-    </a>
-    <a href="#" className="w3-bar-item w3-button">
-      <i className="fa fa-hourglass-end w3-margin-right" />
-      Drafts
-    </a>
-    <a href="#" className="w3-bar-item w3-button">
-      <i className="fa fa-trash w3-margin-right" />
-      Trash
-    </a>
+    <SideBarItem
+        href="#" className="fa fa-paper-plane w3-margin-right" 
+        title="Sent"
+    />
+    <SideBarItem
+        href="#" className="fa fa-hourglass-end w3-margin-right"
+        title="Drafts"
+    />
+    <SideBarItem
+        href="#" className="fa fa-trash w3-margin-right"
+        title="Trash"
+    />
   </nav>
   )
 }
