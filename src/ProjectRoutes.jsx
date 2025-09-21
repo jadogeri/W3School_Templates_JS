@@ -33,6 +33,8 @@ import HouseDesign from "./house_design/src/App.js"
 import InteriorDesign from "./interior_design/src/App.js"
 import Mail from "./mail/src/App.js"
 import Marketing from "./marketing/src/App.js"
+import MarketingWebsite from "./marketing_website/src/App.js"
+
 
 
 
@@ -97,6 +99,8 @@ const ProjectRoutes = () => {
 			<Route path="/interior_design" element={<InteriorDesign />} />
 			<Route path="/mail" element={<Mail />} />
 			<Route path="/marketing" element={<Marketing />} />
+			<Route path="/marketing_website" element={<MarketingWebsite />} />
+
 
 			<Route path="*" element={<NoPage />} />
 		</Routes>
