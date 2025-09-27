@@ -103,6 +103,9 @@ export const websiteArray = [
       {
         src:"https://www.w3schools.com/Css/img_temp_website.jpg" , alt:"marketing website" , route:"/marketing_website"
       },
+      {
+        src:"https://www.w3schools.com/w3css/img_temp_portfolio.jpg" , alt:"nature portfolio" , route:"/nature_portfolio"
+      },
 ]
 
 
