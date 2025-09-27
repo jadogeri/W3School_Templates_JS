@@ -1,4 +1,5 @@
 import React from 'react'
+import CustomerCard from '../../components/CustomerCard'
 
 const Work = () => {
   return (
@@ -16,53 +17,15 @@ const Work = () => {
         mollit anim id est laborum.
       </p>
     </div>
-    <div className="w3-quarter">
-      <div className="w3-card w3-white">
-        <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Snow" style={{ width: "100%" }} />
-        <div className="w3-container">
-          <h3>Customer 1</h3>
-          <h4>Trade</h4>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-        </div>
-      </div>
-    </div>
-    <div className="w3-quarter">
-      <div className="w3-card w3-white">
-        <img
-          src="https://www.w3schools.com/w3images/lights.jpg"
-          alt="Lights"
-          style={{ width: "100%" }}
-        />
-        <div className="w3-container">
-          <h3>Customer 2</h3>
-          <h4>Trade</h4>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-        </div>
-      </div>
-    </div>
-    <div className="w3-quarter">
-      <div className="w3-card w3-white">
-        <img
-          src="https://www.w3schools.com/w3images/mountains.jpg"
-          alt="Mountains"
-          style={{ width: "100%" }}
-        />
-        <div className="w3-container">
-          <h3>Customer 3</h3>
-          <h4>Trade</h4>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-          <p>Blablabla</p>
-        </div>
-      </div>
-    </div>
+    <CustomerCard
+      src="https://www.w3schools.com/w3images/snow.jpg" alt="Snow"  name="Customer 1"
+    />
+    <CustomerCard
+      src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" name="Customer 2"
+    />
+    <CustomerCard
+      src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" name="Customer 3"
+    />
   </div>
     </section>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import TeamMember from '../../components/TeamMember'
 
 const TeamContainer = () => {
   return (
@@ -8,46 +9,22 @@ const TeamContainer = () => {
     <p>Meet the team - our office rats:</p>
     <div className="w3-row">
       <br />
-      <div className="w3-quarter">
-        <img
+      <TeamMember
+        src="https://www.w3schools.com/w3images/avatar.jpg"
+        alt="Boss" name="Johnny Walker" title="Web Designer"
+      />
+      <TeamMember
           src="https://www.w3schools.com/w3images/avatar.jpg"
-          alt="Boss"
-          style={{ width: "45%" }}
-          className="w3-circle w3-hover-opacity"
-        />
-        <h3>Johnny Walker</h3>
-        <p>Web Designer</p>
-      </div>
-      <div className="w3-quarter">
-        <img
-          src="https://www.w3schools.com/w3images/avatar.jpg"
-          alt="Boss"
-          style={{ width: "45%" }}
-          className="w3-circle w3-hover-opacity"
-        />
-        <h3>Rebecca Flex</h3>
-        <p>Support</p>
-      </div>
-      <div className="w3-quarter">
-        <img
-          src="https://www.w3schools.com/w3images/avatar.jpg"
-          alt="Boss"
-          style={{ width: "45%" }}
-          className="w3-circle w3-hover-opacity"
-        />
-        <h3>Jan Ringo</h3>
-        <p>Boss man</p>
-      </div>
-      <div className="w3-quarter">
-        <img
-          src="https://www.w3schools.com/w3images/avatar.jpg"
-          alt="Boss"
-          style={{ width: "45%" }}
-          className="w3-circle w3-hover-opacity"
-        />
-        <h3>Kai Ringo</h3>
-        <p>Fixer</p>
-      </div>
+          alt="Boss" name="Rebecca Flex"  title="Support"
+       />
+      <TeamMember
+        src="https://www.w3schools.com/w3images/avatar.jpg"
+        alt="Boss" name="Jan Ringo" title="Boss man"
+      />
+      <TeamMember
+        src="https://www.w3schools.com/w3images/avatar.jpg"
+        alt="Boss"  name="Kai Ringo" title="Fixer"
+      />
     </div>
   </div>
     </section>
