@@ -1,98 +1,23 @@
 import './App.css';
+import Accordion from './components/Accordion';
+import AlertBox from './components/AlertBox';
+import AppBar from './layouts/AppBar';
+import Footer from './layouts/Footer';
+import Interests from './layouts/sections/Interests';
+import Profile from './layouts/sections/Profile';
+import NavBar from './layouts/NavBar';
 
 function App() {
   return (
 <>
   {/* Navbar */}
-  <div className="w3-top">
-    <div className="w3-bar w3-theme-d2 w3-left-align w3-large">
-      <a
-        className="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
-        href="javascript:void(0);"
-        onclick="openNav()"
-      >
-        <i className="fa fa-bars" />
-      </a>
-      <a
-        href="#"
-        className="w3-bar-item w3-button w3-padding-large w3-theme-d4"
-      >
-        <i className="fa fa-home w3-margin-right" />
-        Logo
-      </a>
-      <a
-        href="#"
-        className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-        title="News"
-      >
-        <i className="fa fa-globe" />
-      </a>
-      <a
-        href="#"
-        className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-        title="Account Settings"
-      >
-        <i className="fa fa-user" />
-      </a>
-      <a
-        href="#"
-        className="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-        title="Messages"
-      >
-        <i className="fa fa-envelope" />
-      </a>
-      <div className="w3-dropdown-hover w3-hide-small">
-        <button className="w3-button w3-padding-large" title="Notifications">
-          <i className="fa fa-bell" />
-          <span className="w3-badge w3-right w3-small w3-green">3</span>
-        </button>
-        <div
-          className="w3-dropdown-content w3-card-4 w3-bar-block"
-          style={{ width: 300 }}
-        >
-          <a href="#" className="w3-bar-item w3-button">
-            One new friend request
-          </a>
-          <a href="#" className="w3-bar-item w3-button">
-            John Doe posted on your wall
-          </a>
-          <a href="#" className="w3-bar-item w3-button">
-            Jane likes your post
-          </a>
-        </div>
-      </div>
-      <a
-        href="#"
-        className="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
-        title="My Account"
-      >
-        <img
-          src="https://www.w3schools.com/w3images/avatar2.png"
-          className="w3-circle"
-          style={{ height: 23, width: 23 }}
-          alt="Avatar"
-        />
-      </a>
-    </div>
-  </div>
+
+  <NavBar />
+
   {/* Navbar on small screens */}
-  <div
-    id="navDemo"
-    className="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large"
-  >
-    <a href="#" className="w3-bar-item w3-button w3-padding-large">
-      Link 1
-    </a>
-    <a href="#" className="w3-bar-item w3-button w3-padding-large">
-      Link 2
-    </a>
-    <a href="#" className="w3-bar-item w3-button w3-padding-large">
-      Link 3
-    </a>
-    <a href="#" className="w3-bar-item w3-button w3-padding-large">
-      My Profile
-    </a>
-  </div>
+
+  <AppBar />
+ 
   {/* Page Container */}
   <div
     className="w3-container w3-content"
@@ -103,145 +28,22 @@ function App() {
       {/* Left Column */}
       <div className="w3-col m3">
         {/* Profile */}
-        <div className="w3-card w3-round w3-white">
-          <div className="w3-container">
-            <h4 className="w3-center">My Profile</h4>
-            <p className="w3-center">
-              <img
-                src="https://www.w3schools.com/w3images/avatar3.png"
-                className="w3-circle"
-                style={{ height: 106, width: 106 }}
-                alt="Avatar"
-              />
-            </p>
-            <hr />
-            <p>
-              <i className="fa fa-pencil fa-fw w3-margin-right w3-text-theme" />{" "}
-              Designer, UI
-            </p>
-            <p>
-              <i className="fa fa-home fa-fw w3-margin-right w3-text-theme" />{" "}
-              London, UK
-            </p>
-            <p>
-              <i className="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme" />{" "}
-              April 1, 1988
-            </p>
-          </div>
-        </div>
+
+<Profile />
         <br />
         {/* Accordion */}
-        <div className="w3-card w3-round">
-          <div className="w3-white">
-            <button
-              onclick="myFunction('Demo1')"
-              className="w3-button w3-block w3-theme-l1 w3-left-align"
-            >
-              <i className="fa fa-circle-o-notch fa-fw w3-margin-right" /> My
-              Groups
-            </button>
-            <div id="Demo1" className="w3-hide w3-container">
-              <p>Some text..</p>
-            </div>
-            <button
-              onclick="myFunction('Demo2')"
-              className="w3-button w3-block w3-theme-l1 w3-left-align"
-            >
-              <i className="fa fa-calendar-check-o fa-fw w3-margin-right" /> My
-              Events
-            </button>
-            <div id="Demo2" className="w3-hide w3-container">
-              <p>Some other text..</p>
-            </div>
-            <button
-              onclick="myFunction('Demo3')"
-              className="w3-button w3-block w3-theme-l1 w3-left-align"
-            >
-              <i className="fa fa-users fa-fw w3-margin-right" /> My Photos
-            </button>
-            <div id="Demo3" className="w3-hide w3-container">
-              <div className="w3-row-padding">
-                <br />
-                <div className="w3-half">
-                  <img
-                    src="https://www.w3schools.com/w3images/lights.jpg"
-                    style={{ width: "100%" }}
-                    className="w3-margin-bottom"
-                  />
-                </div>
-                <div className="w3-half">
-                  <img
-                    src="https://www.w3schools.com/w3images/nature.jpg"
-                    style={{ width: "100%" }}
-                    className="w3-margin-bottom"
-                  />
-                </div>
-                <div className="w3-half">
-                  <img
-                    src="https://www.w3schools.com/w3images/mountains.jpg"
-                    style={{ width: "100%" }}
-                    className="w3-margin-bottom"
-                  />
-                </div>
-                <div className="w3-half">
-                  <img
-                    src="https://www.w3schools.com/w3images/forest.jpg"
-                    style={{ width: "100%" }}
-                    className="w3-margin-bottom"
-                  />
-                </div>
-                <div className="w3-half">
-                  <img
-                    src="https://www.w3schools.com/w3images/nature.jpg"
-                    style={{ width: "100%" }}
-                    className="w3-margin-bottom"
-                  />
-                </div>
-                <div className="w3-half">
-                  <img
-                    src="https://www.w3schools.com/w3images/snow.jpg"
-                    style={{ width: "100%" }}
-                    className="w3-margin-bottom"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <Accordion />
+
         <br />
         {/* Interests */}
-        <div className="w3-card w3-round w3-white w3-hide-small">
-          <div className="w3-container">
-            <p>Interests</p>
-            <p>
-              <span className="w3-tag w3-small w3-theme-d5">News</span>
-              <span className="w3-tag w3-small w3-theme-d4">W3Schools</span>
-              <span className="w3-tag w3-small w3-theme-d3">Labels</span>
-              <span className="w3-tag w3-small w3-theme-d2">Games</span>
-              <span className="w3-tag w3-small w3-theme-d1">Friends</span>
-              <span className="w3-tag w3-small w3-theme">Games</span>
-              <span className="w3-tag w3-small w3-theme-l1">Friends</span>
-              <span className="w3-tag w3-small w3-theme-l2">Food</span>
-              <span className="w3-tag w3-small w3-theme-l3">Design</span>
-              <span className="w3-tag w3-small w3-theme-l4">Art</span>
-              <span className="w3-tag w3-small w3-theme-l5">Photos</span>
-            </p>
-          </div>
-        </div>
+
+      <Interests />
         <br />
         {/* Alert Box */}
-        <div className="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-          <span
-            onclick="this.parentElement.style.display='none'"
-            className="w3-button w3-theme-l3 w3-display-topright"
-          >
-            <i className="fa fa-remove" />
-          </span>
-          <p>
-            <strong>Hey!</strong>
-          </p>
-          <p>People are looking at your profile. Find out who.</p>
-        </div>
+
+        <AlertBox />
+
         {/* End Left Column */}
       </div>
       {/* Middle Column */}
@@ -448,17 +250,8 @@ function App() {
   </div>
   <br />
   {/* Footer */}
-  <footer className="w3-container w3-theme-d3 w3-padding-16">
-    <h5>Footer</h5>
-  </footer>
-  <footer className="w3-container w3-theme-d5">
-    <p>
-      Powered by{" "}
-      <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
-        w3.css
-      </a>
-    </p>
-  </footer>
+
+<Footer />
 </>
 
   );
