@@ -42,7 +42,8 @@ function App() {
         </p>
       </div>
       <div className="w3-third w3-center">
-        <i className="fa fa-anchor w3-padding-64 w3-text-red" />
+        <i className="fa fa-anchor w3-padding-64 w3-text-red" 
+        style={{fontSize: 200}}/>
       </div>
     </div>
   </div>
@@ -50,7 +51,8 @@ function App() {
   <div className="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div className="w3-content">
       <div className="w3-third w3-center">
-        <i className="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right" />
+        <i className="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right" 
+        style={{fontSize: 200}}/>
       </div>
       <div className="w3-twothird">
         <h1>Lorem Ipsum</h1>
