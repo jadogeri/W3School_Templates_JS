@@ -12,6 +12,7 @@ import About from './layouts/sections/About';
 import SideBar from './layouts/SideBar';
 import Header from './layouts/Header';
 import NavBar from './layouts/NavBar';
+import { closeModal } from './utils/closeModal';
 
 function App() {
 
@@ -62,7 +63,7 @@ function App() {
   <div
     id="modal01"
     className="w3-modal w3-black"
-    onClick={()=>{this.style.display='none'}}
+    onClick={()=>{closeModal()}}
   >
     <span
       className="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
