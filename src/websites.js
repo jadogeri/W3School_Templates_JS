@@ -112,6 +112,9 @@ export const websiteArray = [
        {
         src:"https://www.w3schools.com/w3css/img_temp_startup.jpg" , alt:"start up" , route:"/startup"
       },
+      {
+        src:"https://www.w3schools.com/Css/img_temp_webpage.jpg" , alt:"web page" , route:"/web_page"
+      },
 ]
 
 

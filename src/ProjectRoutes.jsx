@@ -37,6 +37,7 @@ import MarketingWebsite from "./marketing_website/src/App.js"
 import NaturePortfolio from "./nature_portfolio/src/App.js"
 import SocialMedia from "./social_media/src/App.js"
 import StartUp from "./startup/src/App.js"
+import WebPage from "./web_page/src/App.js"
 
 
 
@@ -109,6 +110,8 @@ const ProjectRoutes = () => {
 			<Route path="/nature_portfolio" element={<NaturePortfolio />} />
 			<Route path="/social_media" element={<SocialMedia />} />
 			<Route path="/startup" element={<StartUp />} />
+			<Route path="/web_page" element={<WebPage />} />
+
 
 
 
