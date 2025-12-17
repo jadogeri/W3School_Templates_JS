@@ -11,11 +11,16 @@ This is a frontend Application template with multiple starter projects from w3sc
 
 ## Authors
 
-- [@jadogeri](https://www.github.com/jadogeri)
+[@jadogeri](https://www.github.com/jadogeri)
 
 ## Repository
 
-- [source code ](https://github.com/jadogeri/W3School_Templates_JS.git)
+[source code ](https://github.com/jadogeri/W3School_Templates_JS.git)
+
+## Deployment
+
+project is hosted using GitHub Pages
+[Link to test site ](https://jadogeri.github.io/W3School_Templates_JS/)
 
 ## Screenshots
 
