@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+## **W3School Template JS**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Version:** 1.10.0
+**Date:** December 17, 2025
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This is a frontend Application template with multiple starter projects from w3schools. All projects were converted from html to jsx.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Authors
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [@jadogeri](https://www.github.com/jadogeri)
 
-### `npm test`
+## Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [source code ](https://github.com/jadogeri/W3School_Templates_JS.git)
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| ![Screenshot 1](assets/images/screenshot1.png) | ![Screenshot 1](assets/images/screenshot2.png) |
+| -------------------------------------------- | -------------------------------------------- |
+| ![Screenshot 1](assets/images/screenshot3.png) | ![Screenshot 1](assets/images/screenshot4.png) |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Table of Contents
 
-### `npm run eject`
+<ul>
+    <li><a href="#1-introduction">1. Introduction</a>
+      <ul>
+        <li><a href="#11-purpose">1.1 Purpose</a> </li>
+      </ul>
+    </li>
+    <li><a href="#2-installation">2. Installation</a>  </li>
+    <li><a href="#3-usage">3. Usage</a>
+      <ul>
+          <li><a href="#31-run-application">3.1 Run Application</a> </li>
+          <ul>
+            <li><a href="#311-run-locally">3.1.1 Run Locally</a> </li>
+          </ul>
+      </ul>
+    </li>
+    <li><a href="#4-references">6. References</a> </li>
+</ul>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## **1. Introduction**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **1.1 Purpose**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This document outlines the components, and design considerations for functionality to express application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## **2. Installation**
 
-## Learn More
+* [Download and install NodeJS](https://nodejs.org/en/download)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **3. Usage**
 
-### Code Splitting
+**Prerequisites** :installation of NodeJS.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **3.1 Run Application**
 
-### Analyzing the Bundle Size
+1 Open command prompt or terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2 Type command git clone https://github.com/jadogeri/W3School_Templates_JS.git then press enter.
 
-### Making a Progressive Web App
+```bash
+  git clone https://github.com/jadogeri/W3School_Templates_JS.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3 Enter command cd W3School_Templates_JS then press enter.
 
-### Advanced Configuration
+```bash
+  cd W3School_Templates_JS
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### **3.1.1 Run Locally**
 
-### Deployment
+1 Type npm install --force to install dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+  npm install --force
+```
 
-### `npm run build` fails to minify
+2 Type npm run dev to run application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  npm start
+```
+
+Note: use [W3schools site](https://www.w3schools.com/css/css_rwd_templates.asp) as reference to search projects
+
+
+## **4. References**
+* W3Schools : [Responsive Web Design - Templates)](https://www.w3schools.com/css/css_rwd_templates.asp).
+* FreeCodeCamp : [Frontend Web Development: (HTML, CSS, JavaScript, TypeScript, React)](https://www.youtube.com/watch?v=MsnQ5uepIa).
+* AweSome Open Source : [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+* Readme.so : [The easiest way to create a README](https://readme.so/)
+* HUXN Webdev : [Master ReactJS in 7 Hours with 10 Real-World Projects 2023](https://www.youtube.com/watch?v=XrwsMN2IWnE/)
+* Dave Gray : [React JS Full Course for Beginners | Complete All-in-One Tutorial | 9 Hours](https://www.youtube.com/watch?v=RVFAyFWO4go/)
+* Dipesh Malvia : [Learn React JS with Project in 2 Hours | React Tutorial for Beginners | React Project Crash Course](https://www.youtube.com/watch?v=0riHps91AzE/)
+
