@@ -39,31 +39,6 @@ import SocialMedia from "./social_media/src/App.js"
 import StartUp from "./startup/src/App.js"
 import WebPage from "./web_page/src/App.js"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//https://dev.to/jemmycodes/creating-an-image-slider-with-the-usestate-hook-3c8i
-
 import Home from "./Home.jsx"
 import NoPage from "./NoPage.jsx";
 const ProjectRoutes = () => {
