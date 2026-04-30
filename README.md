@@ -1,6 +1,6 @@
-## **W3School Template JS**
+## **W3School Template JS**<br/>
 
-**Version:** 1.10.0
+**Version:** 1.10.0<br/>
 **Date:** December 17, 2025
 
 ---
